@@ -16,7 +16,7 @@ export default function CheckoutPage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const shipping = 0; // free shipping over 300, etc.
+  const shipping: number = 0; // free shipping over 300, etc.
   const tax = cartTotal * 0.08;
   const total = cartTotal + shipping + tax;
 
